@@ -1,0 +1,30 @@
+<form style="color: #fff" method="Post" action="/admin?_method=PUT">
+
+<div class="mb-3">
+  <label for="name" class="form-label">tên sản phẩm</label>
+  <input type="text" class="form-control" id="name" name="name" value="{{product.name}}">
+</div>
+
+<div class="mb-3">
+  <label for="product_id" class="form-label">mã sản phẩm</label>
+  <input type="text" class="form-control" id="product_id" name="product_id" value="{{product.product_id}}">
+</div>
+
+<div class="mb-3">
+  <label for="price" class="form-label">giá</label>
+  <input type="number" class="form-control" id="price" name="price" value="{{product.price}}">
+</div>
+
+<div class="mb-3">
+  <label for="image" class="form-label">link ảnh</label>
+  <input type="text" class="form-control" id="image" name="image" value="{{product.image}}">
+</div>
+
+<div class="mb-3">
+  <label for="description" class="form-label">Mô tả</label>
+ 
+  <input type="text" class="form-control" id="image" name="image"  value="{{product.description}}">
+</div>
+
+<button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>

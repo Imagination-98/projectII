@@ -1,0 +1,18 @@
+<form class="card" method="post" action="/user/payment" >
+
+  <div class="card-body" style="color: #2e2e2e; display:inline-block; width: 200px " >
+    <h5 class="card-title">{{product.name}}</h5>
+    giá:
+    <p class="card-text">{{product.price}}</p>
+    <input type="number" class="form-control" id="quantity" name="quantity" value="1">
+    <div style=" display:none">
+    <input type="text" class="form-control" id="product_id" name="product_id" value="{{product.product_id}}">
+    <input type="text" class="form-control" id="product_price" name="product_price" value="{{product.price}}">
+    <input type="text" class="form-control" id="product_name" name="product_name" value="{{product.name}}">
+
+    </div>
+
+    <button class="btn btn-primary " type="submit" > Thanh toán</button>
+                                
+  </div>
+</form>

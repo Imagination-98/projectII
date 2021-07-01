@@ -1,0 +1,280 @@
+<!--BANNER-->
+            <div id="banner" class="general-block">
+
+                <!--MAIN TEXT-->
+                <div id="text-box">
+                    <div id="text">
+                        Nội thất <br>
+                        thú cưng <br>
+                        đa dụng
+                    </div>
+                </div> <!--END MAIN TEXT-->
+
+                <div id="photo"></div> <!--PHOTO ANIMATION-->
+
+                <div id="scroll-icon"></div> <!--SCROLL ANIMATION-->
+
+            </div>
+
+            <!--AVAILABLE PRODUCT-->
+            <div id="available-products" class="general-block">
+                
+                <!--CONTENT AVAILABLE PRODUCT-->
+                <div id="content1" class="title" data-aos="fade-left">
+                    Sản phẩm nổi bật
+                </div>
+
+                <a href="#" class="watch-more">
+                    Xem thêm
+                    <i class="ti-angle-right"></i>
+                </a> <!--END CONTENT AVAILABLE PRODUCT-->
+                
+                <!--BLOCK AVAILABLE PRODUCT-->
+                <div class="product-container row" style="margin-top: 100px;">
+                    
+                    <!--AVAILABLE PRODUCT 1-->
+                    {{!-- <div id="product1" class="product">
+                            <div class="product-img">
+                                <img src="img/product.png" alt="">
+                            </div>
+
+                            <div class="product-name">
+                                Nhà cho mèo
+                            </div>
+
+                            <div class="product-info">
+                                Mã: CH001 </br>
+                                Giá: 2,100,000 VND
+                            </div>
+
+                            <div class="product-rate">
+                                <i class="fas fa-star rate-star"></i>
+                                <div class="rate-point">4.5/5</div>
+                            </div>
+
+                            <a href="http://localhost:3001/products"class="more button-cta" > Chi tiết </a>
+
+                            <a href="http://localhost:3001/cart" class="buy button-cta"> Thêm giỏ </a>
+                    </div> <!-- END AVAILABLE PRODUCT 1--> --}}
+
+                    {{#each products}}
+                    <div class="col-sm-6 col-lg-3" >
+                        <form class="card" method="POST" action="/user/cart">
+                            <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}" style="height:250px">
+                            <div class="card-body" style="color: #2e2e2e; height: 250px">
+                                <h5 class="card-title">{{this.name}}</h5>
+                                <p class="card-text">{{this.description}}</p>
+                                <p class="card-text">{{this.price}}</p>
+                                <input style=" opacity:0" type="text" class="form-control" id="product_id" name="product_id" value="{{this.product_id}}">
+                                <button class="btn btn-primary" type="submit" > Thêm giỏ</button>
+                                <a href="/products/{{this.product_id}}" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </form>
+                    </div>
+                    {{/each}}
+                    
+
+                </div> <!-- END BLOCK AVAILABLE PRODUCT-->
+
+                <div id="slider">
+                    <div id="direction-icon">
+
+                    </div>
+
+                    <div id="silde-point">
+                        
+                    </div>
+                </div>
+            </div> <!--END AVALABLE PRODUCT-->
+                
+            <!--CREATIVE PRODUCT-->
+            <div id="creative-product" class="general-block">
+
+                <div id="hand-image">
+                    <img src="img/hand/hand.png" id="hand">
+                    <img src="img/hand/cau1.png" id="cau1">
+                    <img src="img/hand/cau2.png" id="cau2">
+                    <img src="img/hand/cau3.png" id="cau3">
+                    <img src="img/hand/chop.png" id="chop">
+                    <img src="img/hand/lap-phuong.png" id="lap-phuong">
+                    <img src="img/hand/xoan1.png" id="xoan1">
+                    <img src="img/hand/xoan2.png" id="xoan2">
+                </div>
+
+                <!--CONTENT CREATIVE PRODUCT-->
+                <div id="content2">
+                    <div id="main-content2"> Góc sáng tạo </br> </div>
+                    <div class="sub-content2">
+                        <div><i class=" ti-help"></i> Những yêu cầu đặc biệt.</div>
+                        <div><i class=" ti-light-bulb"></i> Những ý tưởng độc đáo.</div>
+                        <div><i class=" ti-gift"></i> Những sáng tạo tuyệt vời !</div>
+                    </div>
+                     <button id="button-explore">
+                        Gửi yêu cầu
+                    </button>
+                </div> <!-- END CONTENT CREATIVE PRODUCT-->
+
+                <div id="girl-image">
+                    <img src="img/girl/girl.png" id="girl">
+                    <img src="img/girl/but.png" id="but">
+                    <img src="img/girl/kinh.png" id="kinh">
+                    <img src="img/girl/kinhlup.png" id="kinhlup">
+                    <img src="img/girl/may1.png" id="may1">
+                    <img src="img/girl/may2.png" id="may2">
+                    <img src="img/girl/may3.png" id="may3">
+                    <img src="img/girl/sach.png" id="sach">
+                </div>
+ 
+            </div> <!--END CREATIVE PRODUCT-->
+
+            <!--BLOG-->
+            <div id="blog" class="general-block">
+                <div id="content3" class="title">
+                    Tin tức hữu ích
+                </div>
+
+                <div id="blog1" class="blog" >
+                    <div class="blog-image" id="blog1-image">
+
+                    </div>
+
+                    <div class="blog-title">
+                        Tiêu để a a a a a a a a a a a a a a 
+                    </div>
+
+                    <div class="blog-content">
+                        bb bbb b bb bb bbb bb  bb bbb 
+                    </div> 
+
+                    <div class="date-time">
+                            15/2/2020
+                    </div>
+                </div>
+
+                <div id="blog2" class="blog">
+                    <div class="blog-image" id="blog1-image">
+
+                    </div>
+
+                    <div class="blog-title">
+                        Tiêu để a a a a a a a a a a a a a a 
+                    </div>
+
+                    <div class="date-time">
+                            15/2/2020
+                    </div>
+
+                    <div class="blog-content">
+                        bb bbb b bb bb bbb bb  bb bbb 
+                    </div>
+                </div>
+
+                <div id="blog3" class="blog">
+                    <div class="blog-image" id="blog1-image">
+
+                    </div>
+
+                    <div class="blog-title">
+                        Tiêu để a a a a a a a a a a a a a a 
+                    </div>
+                    
+                    <div class="date-time">
+                            15/2/2020
+                    </div>
+
+                    <div class="blog-content">
+                        bb bbb b bb bb bbb bb  bb bbb 
+                    </div>
+                </div>
+
+                <div id="blog4" class="blog">
+                    <div class="blog-image" id="blog1-image">
+
+                    </div>
+
+                    <div class="blog-title">
+                        Tiêu để a a a a a a a a a a a a a a 
+                    </div>
+                    
+                    <div class="date-time">
+                            15/2/2020
+                    </div>
+                  
+                    <div class="blog-content">
+                        bb bbb b bb bb bbb bb  bb bbb 
+                    </div>
+                </div>
+
+                <div id="blog5" class="blog">
+                    <div class="blog-image" id="blog1-image">
+
+                    </div>
+
+                    <div class="blog-title">
+                        Tiêu để a a a a a a a a a a a a a a 
+                    </div>
+                    
+                    <div class="date-time">
+                            15/2/2020
+                    </div>
+
+                    <div class="blog-content">
+                        bb bbb b bb bb bbb bb  bb bbb 
+                    </div>
+                </div>
+
+                <div id="blog6" class="blog">
+                    <div class="blog-image" id="blog1-image">
+
+                    </div>
+
+                    <div class="blog-title">
+                        Tiêu để a a a a a a a a a a a a a a 
+                    </div>
+                    
+                    <div class="date-time">
+                            15/2/2020
+                    </div>
+
+                    <div class="blog-content">
+                        bb bbb b bb bb bbb bb  bb bbb 
+                    </div>
+                </div>
+            </div> <!-- END BLOG-->
+
+            <!--PARTNER-->
+            <div id="partner">
+
+            </div> <!--END PARTNER-->
+
+            <!--CONTACT-->
+            <div id="contact">
+
+            </div>
+
+
+        </div> <!--END MAIN-->
+        
+        
+        <!--3D HOVER AVAILABLE PRODUCT EFECT-->
+        <script type="text/javascript">
+            VanillaTilt.init( document.querySelectorAll(".product"), 
+            {   
+                max: 25,
+                speed: 400
+            });
+        </script>
+        
+        
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+              } else {
+                document.getElementById("header").style.top = "-80px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>

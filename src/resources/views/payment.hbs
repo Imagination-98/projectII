@@ -1,0 +1,61 @@
+<table class="table" style="color: #fff;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên sản phẩmt</th>
+      <th scope="col">Số lượng</th>
+      <th scope="col">Đơn giá</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{sum @index 1}}</td>
+      <td>{{cart.product_name}}</td>
+      <td>{{cart.quantity}}</td>
+      <td>{{cart.product_price}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="color: #fff;">
+  Tổng hóa đơn:
+<div id="total-price">
+   {{cart.total_price}}
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">tên người nhận</label>
+  <input type="text" class="form-control"  value="nguyen van a">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">só điện thoại</label>
+  <input type="number" class="form-control"  value="0123456789">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">địa chỉ</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" value="1 dai co viet">
+</div>
+Chọn ngân hàng
+<select class="form-select" aria-label="Default select example">
+  <option selected value="2">Techcombank</option>
+  
+  <option value="1">Vietinbank</option>
+  <option value="3">Agribank</option>
+</select>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">số tài khoản ngân hàng</label>
+  <input type="number" class="form-control" id="exampleFormControlInput1" value="109052666825">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">mật khẩu tài khoản ngân hàng</label>
+  <input type="password" class="form-control"  >
+</div>
+
+<button class="btn btn-primary">
+  <a style="color: #fff;" href="http://localhost:3001">Thanh toán</a>
+</button>
+</div>

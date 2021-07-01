@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "60d81b94ef5ae58263d3e995"
+  },
+  "name": "Nha cho cho 1",
+  "description": "mo ta 1",
+  "image": [
+    "https://my-test-11.slatic.net/p/5b0e6a74139b43c9869b9a5f678f981c.jpg_320x320.jpg,mo ta 1",
+    "mo ta 1"
+  ],
+  "product_id": "dh001",
+  "price": "999999999"
+},{
+  "_id": {
+    "$oid": "60d81c6eef5ae58263d3e997"
+  },
+  "name": "nha cho meo 1",
+  "description": "mo ta 2",
+  "image": "https://vn-test-11.slatic.net/p/72f2634a324c47efcef45f9ed680dd2a.jpg_800x800Q100.jpg",
+  "product_id": "ch001",
+  "price": "300000"
+},{
+  "_id": {
+    "$oid": "60d87ac09094e668b7ff89cf"
+  },
+  "name": "nha cho cho 2",
+  "image": [
+    "https://images-na.ssl-images-amazon.com/images/I/81mvl6rQxxS._SR400,400_.jpg",
+    "mo ta 3"
+  ],
+  "product_id": "dh002",
+  "price": "350000",
+  "description": "mo ta 3"
+},{
+  "_id": {
+    "$oid": "60d87b3f9094e668b7ff89d1"
+  },
+  "name": "nha cho meo 2",
+  "product_id": "ch002",
+  "image": [
+    "https://images-na.ssl-images-amazon.com/images/I/816MS7Iux7L._SR400,400_.jpg",
+    "mo ta 4"
+  ],
+  "price": "800000",
+  "description": "mo ta 4"
+}]

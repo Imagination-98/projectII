@@ -1,0 +1,100 @@
+
+<a href="/admin/addproduct" class="btn btn-primary">Thêm sản phẩm</a>
+
+
+
+
+<table class="table mt-4" style="color:#FFF">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên sản phẩm</th>
+      <th scope="col">Mã sản phẩm</th>
+      <th scope="col">Đơn giá</th>
+      <th scope="col">mô tả</th>
+      <th scope="col"></th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+  {{#each products}}
+    <tr>
+
+      <th scope="row">{{sum @index 1}}</td>
+      <th >{{this.name}}</td>
+      <td>{{this.product_id}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.description}}</td>
+      <td>
+          <a href="/admin/edit/{{this.product_id}}" class="btn btn-secondary">Sửa </a>
+          <a href="/admin/del/{{this.product_id}}" class="btn btn-secondary">Xóa </a>
+      </td>
+
+    </tr>
+  {{/each}}
+    
+  </tbody>
+</table>
+
+
+<table class="table mt-4" style="color:#FFF">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên người dùng</th>
+      <th scope="col">Mã người dùng</th>
+      <th scope="col">số điện thoại</th>
+      <th scope="col">địa chỉ</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  {{#each users}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</td>
+
+      <th>{{this.name}}</td>
+      <td>{{this.user_id}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.address}}</td>
+    </tr>
+  {{/each}}
+    
+  </tbody>
+</table>
+
+
+<table class="table mt-4" style="color:#FFF">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Mã đơn hàng</th>
+      <th scope="col">Mã người dùng</th>
+      
+      <th scope="col">tên người nhận</th>
+      <th scope="col">số điện thoại</th>
+      <th scope="col">địa chỉ</th>
+      <th scope="col">tổng giá trị</th>
+
+
+    </tr>
+  </thead>
+
+  <tbody>
+  {{#each carts}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</td>
+
+      <th>{{this.order_id}}</td>
+      <td>{{this.user_id}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.address}}</td>
+      <td>{{this.total_price}}</td>
+
+    </tr>
+  {{/each}}
+    
+  </tbody>
+</table>
